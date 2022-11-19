@@ -40,8 +40,8 @@ module.exports = () => {
         // ]
       }),
       new InjectManifest({
-        swSrc: 'src/sw.js',
-        swDest: 'service-worker.js',
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
       }),
     ],
 
