@@ -32,12 +32,13 @@ module.exports = () => {
         publicPath: './',
         inject: true,
         fingerprints: false,
-        // icons: [
-        //   {
-        //     src: path.resolve('assets/images/logo.png'),
-        //     sizes: [128, 192]
-        //   }
-        // ]
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256],
+            destination: path.join('assets', 'icons'),
+          }
+        ]
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
