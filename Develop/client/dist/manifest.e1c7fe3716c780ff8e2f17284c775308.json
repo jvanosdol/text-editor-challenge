@@ -1,9 +1,0 @@
-{
-  "name": "Text Editor",
-  "short_name": "text-editor",
-  "orientation": "portrait",
-  "display": "standalone",
-  "start_url": "./",
-  "description": "A text editor that you can install and use offline.",
-  "background_color": "#ffcc00"
-}

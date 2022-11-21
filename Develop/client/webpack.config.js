@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
@@ -23,7 +22,6 @@ module.exports = () => {
         template: './index.html',
         title: 'Webpack Plugin',
       }),
-      new MiniCssExtractPlugin(),
       new WebpackPwaManifest({
         // TODO: Create a manifest.json:
         name: 'Text Editor',
@@ -49,9 +47,13 @@ module.exports = () => {
 
     module: {
       rules: [
+        // {
+        //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        //   type: 'asset/resource',
+        // },
         {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          type: 'asset/resource',
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.m?js$/,
@@ -62,10 +64,6 @@ module.exports = () => {
               presets: ['@babel/preset-env'],
             },
           },
-        },
-        {
-          test: /\.css$/i,
-          use: [MiniCssExtractPlugin.loader, 'css-loader']
         },
       ],
     },
