@@ -1,4 +1,4 @@
-## <Employee-Tracker>
+## <Text-Editor-Challenge>
 
 ## Author
 
@@ -6,15 +6,11 @@ James Van Osdol
 
 ## Description
 
-This project demonstrates a basic understanding on SQL. This project focuses on seeding data into a schema, readin data, updating data, and creating new rows of data within the intial tables. 
+This progressive web application project allows users to write text inside of a downloadable text editor. The text editor can be downloaded, by downloading the text editor, it gives the user the ability to use the text editor in offline mode.
 
-The user may view the current table of departments, the current table of roles, and the current table of employees. The user may also add onto any of the tables. 
+This project takes advantage of the 'indexedDB' local storage in order to store the saved text in the text editor.
 
-In order to use this program, the user must have Node.js installed, as well as the inquirer package, and mysql.
 
-The user must source the schema.sql file and then the seeds.sql file in order to access the database and then seed it with some initial data. 
-
-Once the database is seeded, the user may use the program and view the initial tables.
 
 ## Table of Contents
 
@@ -39,7 +35,7 @@ Once the database is seeded, the user may use the program and view the initial t
 ## Installation
 
 Clone the repo
-git clone https://github.com/jvanosdol/employee-tracker
+git clone https://github.com/jvanosdol/text-editor-challenge
 
 
 ## Screenshots
@@ -48,9 +44,9 @@ git clone https://github.com/jvanosdol/employee-tracker
 - Employee Tracker Screenshot
 
 
-  ![screenshot](/assets/employee-tracker-start.png)
-  
-  ![screenshot](assets/employee-tracker-updated-table.png)
+  ![screenshot](images/text-editor-main.png)
+  ![screenshot](images/text-editor-install.png)
+  ![screenshot](images/text-editor-installed.png)
 
 ## Credits
 
@@ -64,7 +60,11 @@ git clone https://github.com/jvanosdol/employee-tracker
 
 ## Github Repo
 
-https://github.com/jvanosdol/employee-tracker
+https://github.com/jvanosdol/text-editor-challenge
+
+## Deployed Link
+
+https://text-editor-jvanosdol.herokuapp.com/
 
 
 ## How to Contribute
